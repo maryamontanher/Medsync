@@ -1,0 +1,250 @@
+   @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../images/bglogin.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 70px;
+}
+
+.container {
+    max-width: 720px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 25px #7e8786;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #0a4e53;
+}
+
+.separando {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.separando > div {
+    flex: 1;
+    min-width: 300px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+.inputfont {
+ width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #7e8786;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input[type="submit"],
+.entrar {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4bb9a5;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+.entrar:hover {
+    background-color: #3ea38d;
+}
+
+input[type="date"] {
+    background-color: #fff;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: #7e8786;
+    font-size: 15px;
+    border: 1px solid #7e8786;
+    border-radius: 5px;
+    outline: none;
+    margin: 0;
+}
+
+::-webkit-calendar-picker-indicator {
+    background-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.tamanhonome {
+    margin-top: 10px;
+}
+
+.radio-container {
+    margin-top: 20px;
+    max-width: 400px;
+    color: #7e8786;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.radio-wrapper {
+    margin-bottom: 20px;
+    margin-right: 15px;
+}
+
+.radio-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.radio-button:hover {
+    transform: translateY(-2px);
+}
+
+.radio-button input[type="radio"] {
+    display: none;
+}
+
+.radio-checkmark {
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    border: 2px solid #7e8786;
+    border-radius: 50%;
+}
+
+.radio-checkmark:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #0a4e53;
+    transition: all 0.2s ease-in-out;
+}
+
+.radio-button input[type="radio"]:checked ~ .radio-checkmark:before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.radio-label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.select {
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: #7e8786;
+    font-size: 15px;
+    border: 1px solid #7e8786;
+    background-color: #fff;
+}
+
+.formdadireita {
+    display: flex;
+    flex-direction: column;
+}
+
+.editar,
+.excluir {
+    width: 100%;
+    padding: 10px 50px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4bb9a5;
+    color: #fff;
+    cursor: pointer;
+}
+
+.excluir {
+    background-color: #c44545;
+}
+
+.excluir:hover {
+    background-color: #a83232;
+}
+
+.editar:hover {
+    background-color: #3ea38d;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .separando {
+        flex-direction: column;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4bb9a5;
+    padding: 0px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 120px;
+    background: no-repeat left center / contain;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: rgb(50, 97, 81);
+}

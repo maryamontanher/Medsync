@@ -1,0 +1,109 @@
+html {
+    scroll-behavior: smooth;
+  }
+  * {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /*segura o body lá em cima (não deixa aparecer nada antes da nav-bar)*/
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+  }.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4bb9a5;
+    padding: 0px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .logo img {
+    width: 120px;
+    background: no-repeat left center / contain;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  .nav-links li {
+    margin: 0 15px;
+  }
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  .nav-links a:hover {
+    color: rgb(50, 97, 81);
+  }
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background: url('./images/c1.jpeg') no-repeat center/cover;
+    padding-top: 70px;
+  }
+  .beneficios {
+    background-color: #e6f5f2; 
+    width: 100%;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  .beneficios h2 {
+    font-size: 2.5rem;
+    color: #2b2b2b;
+    margin-bottom: 50px;
+  }
+  
+  .beneficios-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .beneficios .card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 30px 20px;
+    max-width: 300px;
+    transition: transform 0.3s;
+    border-top: 5px solid #4bb9a5;
+  }
+  
+  .beneficios .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .beneficios .card h3 {
+    font-size: 1.5rem;
+    color: #157c5d;
+    margin-bottom: 15px;
+  }
+  
+  .beneficios .card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  .beneficios .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 20px;
+  }

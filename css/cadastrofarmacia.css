@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../images/bglogin.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 70px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 25px #7e8786;
+}
+
+h1 {
+    text-align: center;
+    color: #0a4e53;
+}
+
+.separando {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #7e8786;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input[type="submit"] {
+    background-color: #4bb9a5;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #3aa18b;
+}
+
+.formdadireita {
+    flex: 1;
+    min-width: 300px;
+}
+
+.tamanho {
+    font-size: 14px;
+    color: #0a4e53;
+    font-weight: 500;
+}
+
+/* Estilo para o Select2 (UF) combinando com os inputs */
+
+.select2-container {
+    width: 100% !important;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.select2-container--default .select2-selection--single {
+    width: 100%;
+    padding: 10px;
+    height: auto;
+    border: 1px solid #7e8786;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: normal;
+    padding: 0;
+    margin-top: 2px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 100%;
+    right: 10px;
+}
+
+.select2-container--default .select2-selection--single:focus {
+    outline: none;
+    border-color: #7e8786;
+    box-shadow: none;
+}
+
