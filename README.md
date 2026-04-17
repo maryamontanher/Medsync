@@ -1,6 +1,6 @@
 # MedSync - Sistema de Prontuário Eletrônico
 
-O **MedSync** é um sistema de prontuário eletrônico desenvolvido para facilitar o agendamento de consultas envio de receitas e emissão de atestados. .
+O **MedSync** é um sistema de prontuário eletrônico desenvolvido para facilitar o agendamento de consultas envio de receitas e emissão de atestados.
 
 A plataforma integra diferentes tipos de usuários em um único ambiente (Administração, Médicos, Farmácia, paciente maior e menor de idade), facilitando a comunicação e o acesso às informações clínicas.
 
@@ -57,7 +57,7 @@ O sistema possui múltiplos níveis de acesso:
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 | Categoria         | Tecnologias               |
 |-------------------|---------------------------|
