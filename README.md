@@ -93,7 +93,7 @@ Relacionamentos:
 ---
 
 
-## 💡 Autor
+## Autor
 
 Desenvolvido por **Marya Eduarda, Amanda e Maria Clara** 
 Projeto voltado para aprendizado e desenvolvimento na área de sistemas web.
